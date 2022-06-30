@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/clipcheap/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="Clip Cheap -Home-">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="cc_home">
+    <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+
+    <title>Clip Cheap</title>
+    <link rel="manifest" href="manifest.json">
+  </head>
+
+  <body>
+    <!-- Firebase ('https://firebase.google.com/docs/web/setup') -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"> </script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"> </script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"> </script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDs6wNK3ikCqMBqmjwtor7OhQP0yImg2dU",
+        appId: "1:962091637644:web:30a60867de064bf13054a9",
+        authDomain: "clip-cheap.firebaseapp.com",
+        databaseURL: "https://clip-cheap.firebaseio.com",
+        measurementId: "G-36D2GSHHME",
+        messagingSenderId: "962091637644",
+        projectId: "clip-cheap",
+        storageBucket: "clip-cheap.appspot.com",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <!-- Firebase -->
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('flutter-first-frame', function () {
+          navigator.serviceWorker.register('flutter_service_worker.js?v=3771082426');
+        });
+      }
+    </script>
+
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
